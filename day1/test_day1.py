@@ -43,7 +43,15 @@ class TestDay1(unittest.TestCase):
 
 
     def test_main(self):
+        print("")
+        print(" ------------------------- ")
+        print("")
+        print("Advent of Code Day 1")
+        print("")
         day1_main('day1/input')
+        print("")
+        print(" ------------------------- ")
+        print("")
 
 if __name__ == '__main__':
     unittest.main()
