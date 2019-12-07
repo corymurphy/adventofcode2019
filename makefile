@@ -1,3 +1,3 @@
 advent:
-	python -m unittest discover -p test*.py
+	python3 -m unittest discover -p test*.py
 
