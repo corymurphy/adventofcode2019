@@ -3,7 +3,7 @@ import unittest
 from day3.day3 import *
 from day3.day3 import main as day3_main
 
-class TestDay2(unittest.TestCase):
+class TestDay3(unittest.TestCase):
 
     def test_example0(self):
         expected = 6
@@ -73,21 +73,3 @@ class TestDay2(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-
-from day3.day3 import *
-wire1_directions = 'R75,D30,R83,U83,L12,D49,R71,U7,L72'.split(',')
-wire2_directions = 'U62,R66,U55,R34,D71,R55,D58,R83'.split(',')
-wire1_visted = travel(wire1_directions)
-wire2_visted = travel(wire2_directions)
-cross_sections = get_cross_sections(wire1_visted, wire2_visted)
-cross_sections_steps = get_cross_sections_with_steps(wire1_visted, wire2_visted)
-actual = get_shortest_distance(cross_sections)
-
-
-a = cross_sections_steps[0]
-
-a = {}
-
-a[6,2] = 404
-a[14,5] = 404
